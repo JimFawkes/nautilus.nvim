@@ -1,3 +1,6 @@
+# This is for experimental purposes only!
+Checkout original at [pwntester/nautilus.nvim](https://github.com/pwntester/nautilus.nvim)
+
 # nautilus.nvim
 
 ![https://www.readriordan.com/2021/10/19/daughter-of-the-deep-hop-aboard-the-nautilus/](https://readriordan.com/wp-content/uploads/2021/10/Nautilus_Banner.jpg)
