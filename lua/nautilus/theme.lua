@@ -81,7 +81,7 @@ function M.apply(opts)
     NormalAlt = { fg = c.grey, bg = c.bg_alt },
     FloatBorder = { fg = c.bg, bg = c.bg_alt },
     LineNr = { fg = c.blue4 },
-    CursorLine = {},
+    CursorLine = { bg = c.bg_alt },
     CursorLineNr = { fg = c.yellow },
     Bold = { style = "bold" },
     Debug = { fg = c.red },
