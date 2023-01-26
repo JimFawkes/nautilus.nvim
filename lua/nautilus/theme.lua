@@ -62,10 +62,30 @@ local colors = {
     grey2 = "#898E99",
     grey3 = "#676B73",
     none = "NONE",
-  }
+  },
+  fawkeynauts = {
+    bg = "#181e2e",
+    bg_alt = "#141824",
+    red = "#d38391",
+    orange = "#ffae57",
+    yellow = "#ffcc66",
+    green = "#98c379",
+    magenta = "#c678dd",
+    purple = "#7a88cf",
+    blue = "#719CD6",
+    blue2 = "#9bbdcb",
+    blue3 = "#5E81AC",
+    blue4 = "#3f5d7a",
+    blue5 = "#3a8096",
+    white = "#c8ccd4",
+    grey = "#abb2bf",
+    grey2 = "#898E99",
+    grey3 = "#676B73",
+    none = "NONE",
+  },
 }
 
-colors.default = colors.blueynauts
+colors.default = colors.fawkeynauts
 
 function M.apply(opts)
   opts.mode = opts.mode or "default"
@@ -510,6 +530,12 @@ function M.apply(opts)
     NeoTreeFileName = { fg = c.grey, bg = opts.transparent and c.none or c.bg_alt },
     NeoTreeRootName = { fg = c.yellow },
     NeoTreeCursorLine = { fg = c.yellow },
+
+    -- WhichKey
+    WhichKey = c.yellow,
+    WhichKeyDesc = c.blue2,
+    WhichKeyGroup = c.orange,
+    WhichKeySeperator = c.green,
 
   }
 
