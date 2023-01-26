@@ -2,7 +2,7 @@ local utils = require "nautilus.utils"
 
 local M = {}
 
-local colors = {
+M.colors = {
   brightynauts = {
     bg = "#181e2e",
     bg_alt = "#141824",
@@ -37,6 +37,7 @@ local colors = {
     blue3 = "#5E81AC",
     blue4 = "#3f5d7a",
     blue5 = "#3a8096",
+    blue6 = "#3a84cc",
     white = "#c8ccd4",
     grey = "#abb2bf",
     grey2 = "#898E99",
@@ -57,6 +58,7 @@ local colors = {
     blue3 = "#5E81AC",
     blue4 = "#3f5d7a",
     blue5 = "#3a8096",
+    blue6 = "#3a84cc",
     white = "#c8ccd4",
     grey = "#abb2bf",
     grey2 = "#898E99",
@@ -77,6 +79,7 @@ local colors = {
     blue3 = "#5E81AC",
     blue4 = "#3f5d7a",
     blue5 = "#3a8096",
+    blue6 = "#3a84cc",
     white = "#c8ccd4",
     grey = "#abb2bf",
     grey2 = "#898E99",
@@ -85,11 +88,11 @@ local colors = {
   },
 }
 
-colors.default = colors.fawkeynauts
+M.colors.default = M.colors.fawkeynauts
 
 function M.apply(opts)
   opts.mode = opts.mode or "default"
-  local c = colors[opts.mode]
+  local c = M.colors[opts.mode]
   local theme = {
     colors = c,
     config = opts,
@@ -152,7 +155,7 @@ function M.apply(opts)
     -- Standard syntax highlighting
     Boolean = { fg = c.orange },
     Character = { fg = c.red },
-    Comment = { fg = c.blue2 },
+    Comment = { fg = c.blue3 },
     Conditional = { fg = c.magenta },
     Constant = { fg = c.orange },
     Define = { fg = c.magenta },
